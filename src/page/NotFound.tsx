@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
   return (
     <section className="flex items-center h-full ">
@@ -9,12 +11,14 @@ const NotFound = () => {
           <p className="text-2xl mt-4 font-semibold md:text-3xl">
             Sorry, we couldn't find this page.
           </p>
-          <button
+
+          <Link
+            to="/"
             type="button"
-            className="px-8 py-3 font-semibold border mt-5 rounded-xl bg-white text-black"
+            className="px-8 py-3 font-semibold border mt-5 rounded-xl bg-white border-black text-black"
           >
             Back
-          </button>
+          </Link>
         </div>
       </div>
     </section>
